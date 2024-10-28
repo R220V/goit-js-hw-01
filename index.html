@@ -27,10 +27,12 @@
   <body>
     <!-- ========== Header ========== -->
     <header class="page-header">
-      <div class="container">
+      <div class="container container-social">
         <nav class="nav-menu">
-            <a class="logo" href="index.html"><span class="logo-text-italic">SIMPLY</span>CHOCOLATE</a>
-              <img class="logo-img" src="./Images/svg/chocolate.svg" alt="logo site" SIMPLY CHOCOLATE"/>
+            <a class="logo" href="index.html"><span class="logo-text-italic">SIMPLY</span>&nbsp;&nbsp;CHOCOLATE
+              <svg class="icon-logo" width="24" height="24">
+              <use href="./Images/sprite.svg#icon-chocolate"></use>
+            </svg>
             </a>
             <ul class="menu-list">
               <li class="menu-item">
@@ -44,32 +46,36 @@
               </li>
             </ul>
         </nav>
-      <ul>
-        <li><a href="" target="_blank" rel="noopener no-referrer">insta</a></li>
-        <li><a href="" target="_blank" rel="noopener no-referrer">twit</a></li>
+      <ul class="social-list">
+        <li><a href class="social-list-link" target="_blank" rel="noopener no-referrer"><svg class="social-icon" width="24" height="24">
+          <use href="./Images/sprite.svg#icon-instagram"></use>
+        </svg></a></li>
+        
+        <li><a href class="social-list-link" target="_blank" rel="noopener no-referrer"><svg class="social-icon" width="24" height="24">
+          <use href="./Images/sprite.svg#icon-twitter"></use>
+        </svg></a></li>
       </ul>
     </div>
     </header>
   
     <main>
 
-      <!-- ========== Hero ========== -->
+  <!-- ========== Hero ========== -->
 
        <section  class="hero-container">
-              <div class="containerok">
-                <h1 class="hero-title">
-                  Treat yourself or a loved one to our finest 
-                  ingredients for a moment of pure delight!
-                </h1>
-                <div class="hero-div-scroll">
-                <div class="hero-div">
-                
-                <button class="hero-button-buy" type="button">Buy now</button>
-                <a class="hero-button-how" href="">How it’s made</a>
-              </div>
+        <!-- <div class="containerok"> -->
+            <h1 class="hero-title">
+              Treat yourself or a loved one to our finest 
+              ingredients for a moment of pure delight!
+            </h1>
+              <div class="hero-div-scroll">
+                  <div class="hero-div">  
+                    <button class="hero-button-buy" type="button">Buy now</button>
+                    <a class="hero-button-how" href="">How it’s made</a>
+                  </div>
                 <a class="hero-scroll" href="#ingredients">scroll down</a>
               </div>
-        </div>
+        <!-- </div> -->
       </section>
        <!-- ========== Our Benefits ========== -->
 
@@ -97,7 +103,7 @@
 
         <Section class="section-padding" id="ingredients">
           <div class="container">
-              <h2 class="ingredients-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="akcent">TASTE</span> SENSATION</h2>
+              <h2 class="section-title ingredients-title ">IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="akcent">TASTE</span> SENSATION</h2>
               <p class="ingredients-descriptions">At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.</p>
             <ul class="ingredients-list">
               <li class="ingredients-item">
@@ -124,7 +130,7 @@
 
       <Section class="section-padding" id="made">
         <div class="container">
-          <h2 class="how-title">how it’s<span class="akcent">made?</span></h2>
+          <h2 class="section-title">how it’s <span class="akcent"> made?</span></h2>
             <div class="how-div">
               <img src="./Images/how-made/how-made.jpg" alt="chocolate making process" width="600" height="400">
                 <div class="how-div-text">
@@ -143,48 +149,58 @@
 
         <!-- ========== Reviews ========= -->
       <section class="section-padding" id="reviews">
-        <h2>CHOCOLATE IS LOVED</h2>
-          <ul>
-            <li>
-              <img src="./Images/reviews/victoria-dobrzhanska.png" alt="Victoria Dobrzhanska avatar" width="80" height="80">
-                <h3>Victoria Dobrzhanska</h3>
+        <div class="container">
+        <h2 class="section-title"><span class="akcent">CHOCOLATE</span> IS LOVED</h2>
+        
+          <ul class="reviews-list">
+            <li class="reviews-item">
+              <img class="reviews-img" src="./Images/reviews/victoria-dobrzhanska.png" alt="Victoria Dobrzhanska avatar" width="80" height="80">
+                <h3 class="reviews-title-second">Victoria Dobrzhanska</h3>
                   <p>I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
             </li>
-            <li>
-              <img src="./Images/reviews/nazar-babenko.png" alt="Nazar Babenko avatar" width="80" height="80">
-                <h3>Nazar Babenko</h3>
+            <li class="reviews-item">
+              <img class="reviews-img" src="./Images/reviews/nazar-babenko.png" alt="Nazar Babenko avatar" width="80" height="80">
+                <h3 class="reviews-title-second">Nazar Babenko</h3>
                   <p>This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
             </li>
-            <li>
-              <img src="./Images/reviews/olena-kampusch.png" alt="Olena Kampusch avatar" width="80" height="80">
-                <h3>Olena Kampusch</h3>
+            <li class="reviews-item">
+              <img class="reviews-img" src="./Images/reviews/olena-kampusch.png" alt="Olena Kampusch avatar" width="80" height="80">
+                <h3 class="reviews-title-second">Olena Kampusch</h3>
                   <p> Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
             </li>
           </ul>
-          <button type="button">Leave  a review</button>
+          <button   class="reviews-button" type="button">Leave  a review</button>
+        </div>
       </section>
     </main>
+
       <!-- ========== Footer ========== -->
-      <footer class="section-padding">
-        <h2>Chocolate a delicious cure for a bad day</h2>
-        <address>
-          <p>Contact us</p>
-          <ul>
-            <li>
-              <a href="tel:+380 (68) 443-94-26">+380 (68) 443-94-26</a>
-            </li>
-            <li>
-              <a href=mailto:"simplycthoc@gmail.com">simplycthoc@gmail.com</a>
-            </li>
-          </ul>
-        </address>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#made">How it’s made?</a></li>
-            <li><a href="#reviews">Chocolate is loved</a></li>
-          </ul>
-        </nav>
+
+      <footer class="section-padding" id="reviews">
+          <div class="container footer-container">
+            <div class="footer-div">
+                <h2 class="footer-title"><span class="akcent">Chocolate</span> a delicious cure for a bad day</h2>
+                <address>
+                  <p class="footer-description">Contact us</p>
+                  <ul class="footer-list">
+                    <li>
+                      <a href="tel:+380 (68) 443-94-26">+380 (68) 443-94-26</a>
+                    </li>
+                    <li>
+                      <a href=mailto:"simplycthoc@gmail.com">simplycthoc@gmail.com</a>
+                    </li>
+                  </ul>
+                </address>
+            </div>
+            <hr class="line"/>
+            <nav>
+              <ul class="footer-nav-list">
+                <li class="nav-link"><a  href="index.html">Home</a></li>
+                <li class="nav-link"><a href="#made">How it’s made?</a></li>
+                <li class="nav-link"><a href="#reviews">Chocolate is loved</a></li>
+              </ul>
+            </nav>
+          </div>
       </footer>
  </body>
 </html>

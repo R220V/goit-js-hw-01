@@ -38,7 +38,7 @@ img {
 }
 
 .container {
-  max-width: 1168px;
+  max-width: 1200px;
   padding: 0 16px;
   margin: 0 auto;
 }
@@ -48,12 +48,31 @@ img {
   padding-bottom: 50px;
 }
 
+.section-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+  width: 411px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.akcent {
+  color: #fd9222;
+}
+
 /* ========== Header ========== */
 
 .nav-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-grow: 1;
 }
 
 .menu-list {
@@ -62,10 +81,16 @@ img {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.12;
   letter-spacing: -0.03em;
+}
+
+.icon-logo {
+  margin-left: 4px;
 }
 .logo-text-italic {
   font-style: italic;
@@ -84,29 +109,54 @@ img {
   color: #fd9222;
 }
 
+.social-icon {
+  fill: none;
+}
+
+.social-list {
+  display: flex;
+  column-gap: 18px;
+}
+
+.social-list-link {
+  display: block;
+  line-height: 0;
+  stroke: #111111;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  stroke: #fd9222;
+}
+
+.container-social {
+  display: flex;
+  align-items: center;
+  column-gap: 90px;
+}
+
 /* ========== Hero ========== */
+
 .hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
   background-color: #1e1823;
-  max-width: 100%;
   padding: 381px 72px 40px;
   margin-bottom: 22px;
   border-radius: 30px;
 }
 
-.containerok {
-  max-width: 1168px;
-
-  margin: 0 auto;
-}
+/* .containerok {
+  width: 1168px;
+  
+} */
 
 .hero-title {
   font-weight: 500;
   font-size: 28px;
-  line-height: 1.21429;
+  line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
   margin-bottom: 32px;
-
   width: 465px;
 }
 
@@ -152,7 +202,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* max-width: 1056px; */
   margin: 0 auto;
 }
 
@@ -165,9 +214,10 @@ img {
 }
 
 /* ========== Benefits ========== */
+
 .benefits-div {
   background-color: #1e1823;
-  max-width: 100%;
+
   padding: 50px;
 }
 
@@ -213,20 +263,7 @@ img {
 /* ========== Ingredients ========== */
 
 .ingredients-title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #111;
-  width: 411px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 28px;
-}
-.akcent {
-  color: #fd9222;
 }
 
 .ingredients-descriptions {
@@ -275,22 +312,12 @@ img {
 .ingredients-title-two {
   font-weight: 600;
   font-size: 14px;
-  line-height: 1.28571;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
 
 /* ========== How it’s made ========== */
-.how-title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #111;
-  margin-bottom: 50px;
-}
 
 .how-div {
   display: flex;
@@ -318,7 +345,126 @@ img {
 .how-item {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.28571;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   margin-bottom: 24px;
+}
+
+/* ========== Reviews ========== */
+
+.reviews-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 28px;
+  margin-bottom: 50px;
+}
+
+.reviews-item {
+  position: relative;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  background-color: #fff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  background: #fff;
+  width: calc((100% - 56px) / 3);
+}
+
+.reviews-img {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+.reviews-title-second {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: #111;
+  margin-top: 56px;
+  margin-bottom: 24px;
+}
+
+.reviews-button {
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 14px 40px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #111;
+  background-color: #fff;
+}
+
+/* ========== Footer ========== */
+
+.footer-container {
+  max-width: 1200px;
+  padding-top: 50px;
+  padding-right: 26px;
+  padding-left: 32px;
+  color: #ffffff;
+  background: #1e1823;
+}
+
+.footer-title {
+  width: 300px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.footer-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-description {
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: start;
+  color: #fff;
+  font-weight: 400;
+}
+
+.footer-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: start;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.line {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0;
+}
+
+.footer-nav-list {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #fff;
+  gap: 24px;
+}
+.nav-link {
+  padding-top: 24px;
+  padding-bottom: 50px;
+}
+
+.section-padding {
+  padding-bottom: 0;
 }
