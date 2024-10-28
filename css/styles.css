@@ -103,7 +103,9 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: -0.02em;
+  transition: 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
 .menu-link:hover,
 .menu-link:focus {
   color: #fd9222;
@@ -122,6 +124,7 @@ img {
   display: block;
   line-height: 0;
   stroke: #111111;
+  transition: 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -144,11 +147,6 @@ img {
   margin-bottom: 22px;
   border-radius: 30px;
 }
-
-/* .containerok {
-  width: 1168px;
-  
-} */
 
 .hero-title {
   font-weight: 500;
@@ -215,9 +213,14 @@ img {
 
 /* ========== Benefits ========== */
 
+/* .benefits-icon {
+  display: flex;
+  fill: none;
+  stroke: rgb(163, 176, 176);
+  border: solid 1px rg3; */
+
 .benefits-div {
   background-color: #1e1823;
-
   padding: 50px;
 }
 
