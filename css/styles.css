@@ -103,7 +103,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: -0.02em;
-  transition: 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: color 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .menu-link:hover,
@@ -124,7 +124,7 @@ img {
   display: block;
   line-height: 0;
   stroke: #111111;
-  transition: 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: stroke 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -139,13 +139,26 @@ img {
 
 /* ========== Hero ========== */
 
-.hero-container {
+.hero-section {
   max-width: 1200px;
   margin: 0 auto;
   background-color: #1e1823;
-  padding: 381px 72px 40px;
-  margin-bottom: 22px;
+  background-image: linear-gradient(
+      rgba(30, 24, 35, 0.4),
+      rgba(30, 24, 35, 0.4)
+    ),
+    url('../Images/bg.jpg');
+  background-size: cover;
+  /* margin-bottom: 22px; */
   border-radius: 30px;
+}
+
+.hero-container {
+  padding-top: 381px;
+  padding-bottom: 40px;
+  padding-left: 56px;
+  padding-right: 56px;
+  color: #ffffff;
 }
 
 .hero-title {
@@ -155,60 +168,87 @@ img {
   letter-spacing: -0.03em;
   color: #fff;
   margin-bottom: 32px;
-  width: 465px;
+  width: 484px;
 }
 
-.hero-div {
+.hero-div-scroll {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
+
 .hero-button-buy {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
   border-radius: 100px;
-  padding: 14px 0;
-
+  padding: 14px 40px;
+  /* padding: 14px 0; */
   border: none;
-  width: 144px;
+  min-width: 144px;
   height: 45px;
   background-color: #fd9222;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  text-align: center;
+  text-align: center; */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button-buy:hover,
+.hero-button-buy:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
 }
 
 .hero-button-how {
   display: flex;
+  align-items: center;
   justify-content: center;
-  text-align: center;
   border: 1px solid #fff;
   border-radius: 100px;
-  padding: 14px 0;
-  width: 183px;
+  /* padding: 14px 0; */
+  min-width: 183px;
   height: 45px;
   font-weight: 600;
   font-size: 14px;
   color: #fff;
-
   margin-left: 14px;
   background-color: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button-how:hover,
+.hero-button-how:focus {
+  color: #fd9222;
+  border-color: #fd9222;
 }
 
 .hero-div-scroll {
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .hero-scroll {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  column-gap: 14px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.03em;
-  color: #fff;
+  /* color: #fff; */
+  margin-right: auto;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-scroll:hover,
+.hero-scroll:focus {
+  color: #fd9222;
 }
 
 /* ========== Benefits ========== */
