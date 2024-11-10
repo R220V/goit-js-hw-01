@@ -9,6 +9,8 @@
 // для умов з 3 елем. використ. елс-іф.
 // для умов з 4-10 умов, викор. світч
 
+//  В (умова), а в { дія}
+
 //  1
 
 // Фунція для визначення типу змінної
@@ -121,3 +123,71 @@
 // console.log(canRegisterOnSite(17, true));
 // console.log(canRegisterOnSite(17, false));
 // console.log(canRegisterOnSite(13, true));
+
+//--------------------------------------------------------------------------
+
+// 7
+
+// Тернарний оператор
+//Чи парне число у функції, якщо результат
+//  не число, повідом "невалідне значення"
+
+// Відповідь:[Число парне Число непрарне Невалідне значення]
+
+// function isEvenNumber(number) {
+//   if (typeof number === 'number') {
+//     return number % 2 === 0 ? 'Число парне' : 'Число непрарне';
+//   } else {
+//     return 'Невалідне значення';
+//   }
+// }
+// console.log(isEvenNumber(8));
+// console.log(isEvenNumber(5));
+// console.log(isEvenNumber('6'));
+
+//--------------------------------------------------------------------------
+
+// 8
+
+// Функція перевіряє значення. Якщо це число,то бере в квадрат.
+// Якщо строка - то переводить в число.
+// Якщо не може - пише 'Invalid Input';
+// Відповідь:[ 12  The square of 12 is 144
+//          NaN    Invalid Input
+//           14.2    The square of 14.2 is 201.64
+//          20    The square of 20 is 400 ]
+
+// function calculateSquare(value) {
+//   const bamboo = parseFloat(value);
+
+//   console.log(bamboo);
+//   if (isNaN(bamboo)) {
+//     return 'Invalid Input';
+//   } else {
+//     return `The square of ${bamboo} is ${bamboo ** 2}`;
+//   }
+// }
+// console.log(calculateSquare('12d'));
+// console.log(calculateSquare('ki89'));
+// console.log(calculateSquare('14.2abcd'));
+// console.log(calculateSquare(20));
+
+//--------------------------------------------------------------------------
+
+// Функція checkString(value) перевіряє, чи значення є рядком і не містить символ $.
+// Якщо це так, виводимо к-сть символів у рядку.
+// Якщо значення не рядок, виведіть повід. про невірний ввід.
+// Відповідь:[2 4 Incorrect entry 11  Incorrect entry]
+
+// function checkString(value) {
+//   if (typeof value === 'string' && !value.includes('$')) {
+//     return value.length;
+//   } else {
+//     return 'Incorrect entry';
+//   }
+// }
+// console.log(checkString('5l'));
+// console.log(checkString('test'));
+// console.log(checkString('te$t'));
+// console.log(checkString('testuvalnik'));
+// console.log(checkString('$'));
