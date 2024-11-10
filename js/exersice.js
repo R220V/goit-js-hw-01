@@ -81,17 +81,16 @@ console.log(sum(10, 20));
  ? Вага та висота будуть спеціально передані як рядки.
  ?
  ? Індекс маси тіла необхідно округлити до однієї цифри після коми.
-
+*/
 // function calcBMI(weight, height) {
 //   weight = Number(weight);
 //   height = Number(height);
 //   const resultBmi = weight / height ** 2;
-//   //   return resultBmi.toFixed(2);
-// //   return Number(resultBmi.toFixed(2)); Якщо потрібне число
+//   return resultBmi.toFixed(1);
+//   //   return Number(resultBmi.toFixed(2)); Якщо потрібне число
 // }
-// const bmi = calcBMI('88.3', '1.75');
+// const bmi = calcBMI('90.0', '1.78');
 // console.log(bmi);
-*/
 
 // ======Розгалуження==Exercise=================================================================
 /* Запросіть у користувача число, якщо число дорівнює 10,
@@ -138,7 +137,7 @@ if (deadLine === 0) {
   console.log('Incorrect value of days');
 }
 */
-
+// ===================================================================================
 /*
 ? Перепишіть конструкцію if з використанням тернарного оператора.
 
@@ -161,7 +160,7 @@ const numB = 1;
 let result = numA + numB < 4 ? 'Мало' : 'Багато';
 console.log(result);
 */
-
+// ===================
 /*
 ?  Перепишіть if..else за допомогою декількох тернарних операторів.
 const login = 'Співробітник';
@@ -190,3 +189,89 @@ let message =
     : 'dfg';
 console.log(message);
 */
+// ==============================================================================
+//  ? Напиши скрипт ВИБОРУ ОПЦІЇ доставки товару.
+// ? Опція зберігається в змінній option: 1 - самовивіз, 2 - кур'єр, 3 - пошта
+// ?
+// ? В змінну message записати повідомлення в залежності від опції.
+
+// const option = 0;
+// let message = '';
+
+// switch (option) {
+//   case 1: {
+//     message = 'Можете забрати ваш товар...';
+//     break;
+//   }
+//   case 2: {
+//     message = 'Кур"єр доставить вам товар...';
+//     break;
+//   }
+//   case 3: {
+//     message = 'Вам товар відправлять поштою...';
+
+//     break;
+//   }
+//   default: {
+//     message = 'Менеджер зв"яжеться з вами.';
+//   }
+// }
+// console.log(message);
+
+// ======================================================================
+
+/* ЛОГІЧНІ ОПЕРАТОРИ
+ * - Перетворення типів: логічне
+ * - Оператор &&
+ * - Оператор ||
+ * - Оператор !
+ */
+
+// console.log(Boolean(NaN)); // false
+// console.log(Boolean(null)); // false
+// console.log(Boolean(undefined)); // false
+// console.log(Boolean(0)); // false
+// console.log(Boolean('')); // false
+
+// console.log(Boolean(3.14));true;
+// console.log(Boolean(-10)); true
+// console.log(Boolean('hello')); true
+// console.log(Boolean('false')); true
+// ---------------------------
+// console.log(5 && 4);  [4]
+// console.log(5 && 'mango'); [mango]
+// console.log(0 && 'mango'); [0]
+
+// const someNumber = 30;
+
+// // if (someNumber >= 5) {
+// //   if (someNumber <= 20) {
+// //     console.log('Done!');
+// //   }
+// // }
+//  або
+// if (someNumber >= 5 && someNumber <= 20) {
+//   console.log('Done!');
+// }
+// ===========================
+/**
+ * --------------------------------
+ */
+
+// console.log(null || 5);
+// console.log(0 || null);
+// console.log(5 || null);
+
+// const username = prompt('Enter your first name') || 'anonymus';
+
+// console.log(username);
+
+/**
+ * --------------------------------
+ */
+
+// console.log(!5);
+// console.log(!0);
+// console.log(!true);
+
+// =============================================================================
