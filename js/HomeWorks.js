@@ -1,8 +1,8 @@
-
-/* Станція з продажу ремонтних дроїдів готова до запуску, залишилося написати програмне забезпечення для відділу продажів.
+/*
+ Станція з продажу ремонтних дроїдів готова до запуску, залишилося написати програмне забезпечення для відділу продажів.
 Оголоси функцію makeTransaction, яка очікує два параметри, значення яких будуть задаватися під час її виклику: • quantity— перший параметр, число, що містить кількість замовлених дроїдів • pricePerDroid — другий параметр, число, що містить вартість одного дроїда
 Доповни код функції так, щоб вона повертала рядок з повідомленням про покупку ремонтних дроїдів: "You ordered <quantity> droids worth <totalPrice> credits!", де: • <quantity> — це кількість замовлених дроїдів • <totalPrice> — це загальна вартість замовлення, тобто вартість усіх замовлених дроїдів
-*/
+
 function makeTransaction(quantity, pricePerDroid) {
   const totalPrice = quantity * pricePerDroid;
 
@@ -17,10 +17,10 @@ console.log(makeTransaction(10, 500)); // "You ordered 10 droids worth 5000 cred
 
 ----------------------------------------------------------------------------
 
-/*Задача 2. Доставка товару
+Задача 2. Доставка товару
 Оголоси функцію getShippingMessage, яка очікує три параметри, значення яких будуть задаватися під час її виклику: • country — перший параметр, рядок, що містить країну доставки • price — другий параметр, число, що містить загальну вартість товару • deliveryFee — третій параметр, число, що містить вартість доставки товару
 Доповни код функції так, щоб вона повертала рядок з повідомленням про доставку товару в країну користувача: "Shipping to <country> will cost <totalPrice> credits", де: • <country> — це країни доставки • <totalPrice> — це загальна вартість замовлення, що включає вартість товару і його доставки
-*/
+
 function getShippingMessage(country, price, deliveryFee) {
     const totalPrice = price + deliveryFee;
   
@@ -32,11 +32,11 @@ function getShippingMessage(country, price, deliveryFee) {
   console.log(getShippingMessage('Sweden', 100, 20)); // "Shipping to Sweden will cost 120 credits"
 ---------------------------------------------------------------------------------
 
-/* Задача 3. Ширина елемента
+ Задача 3. Ширина елемента
 Оголоси функцію getElementWidth, яка очікує три параметри, значення яких будуть задаватися під час її виклику: • content— перший параметр, ширина контенту • padding — другий параметр, значення горизонтального падінгу для кожної зі сторін • border — третій параметр, значення товщини бордера для кожної зі сторін Значення всіх параметрів будуть рядками формату Npx де N — це довільне число, ціле або дробове.
 Доповни код функції так, щоб вона повертала число —загальну ширину елемента. При розрахунку загальної ширини орієнтуйся на те, що значення box-sizing дорівнює border-box.
 Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
-*/
+
 function getElementWidth(content, padding, border) {
     const contentWidth = parseFloat(content);
     const paddingWidth = parseFloat(padding);
@@ -55,7 +55,7 @@ console.log(getElementWidth("200px", "0px", "0px")); // 200
 
 ===========   goit-js-hw-02 =========
 
-/*Станція з продажу ремонтних дроїдів готова до запуску, 
+Станція з продажу ремонтних дроїдів готова до запуску, 
 залишилося написати програмне забезпечення для відділу продажів. 
 Оголоси функцію makeTransaction(quantity, pricePerDroid, customerCredits), 
 яка складає та повертає повідомлення про купівлю ремонтних дроїдів.
@@ -77,7 +77,7 @@ customerCredits — сума коштів на рахунку клієнта
 в іншому випадку функція має повертати рядок 
 "You ordered <quantity> droids worth <totalPrice> credits!", 
 де <quantity> це кількість замовлених дроїдів, а <totalPrice> це їх загальна вартість.
-*/
+
 
 function makeTransaction(quantity, pricePerDroid, customerCredits) {
     const totalPrice = quantity * pricePerDroid;
@@ -95,7 +95,7 @@ function makeTransaction(quantity, pricePerDroid, customerCredits) {
   
 -----------------------------------------------------------------------------------------
 
-/*Оголоси функцію formatMessage(message, maxLength), яка приймає рядок (параметр message) 
+Оголоси функцію formatMessage(message, maxLength), яка приймає рядок (параметр message) 
 та перевіряє його довжину відповідно до заданої максимальної довжини (параметр maxLength).
 
 
@@ -107,7 +107,7 @@ function makeTransaction(quantity, pricePerDroid, customerCredits) {
 
 
 Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
-*/
+
 
 function formatMessage(message, maxLength) {
     if (message.length <= maxLength) {
@@ -126,7 +126,7 @@ function formatMessage(message, maxLength) {
 
   ------------------------------------------------------------------
 
-  /*
+  
 Функція checkForSpam(message) приймає рядок (параметр message), 
 перевіряє його на вміст заборонених слів spam і sale,
 і повертає результат перевірки. Слова в рядку параметра message можуть бути в довільному регістрі,
@@ -136,7 +136,7 @@ function formatMessage(message, maxLength) {
 
 Якщо знайдено заборонене слово (spam або sale), то функція повертає буль true
 Якщо в рядку відсутні заборонені слова, функція повертає буль false
-*/
+
 
 function checkForSpam(message) {
     const normalizedMessage = message.toLowerCase();
@@ -154,7 +154,7 @@ function checkForSpam(message) {
 
   ------------------------------------------------------------------------------
 
-  /*
+  
 Оголоси функцію getShippingCost(country), яка повинна перевіряти можливість
 доставки товару в країну користувача (параметр country) і повертати повідомлення про результат.
 Обов'язково використовуй інструкцію switch.
@@ -171,7 +171,7 @@ Jamaica — 120 кредитів
 
 Зі списку видно, що доставка можлива не скрізь. Якщо зазначена країна відсутня у списку,
  то функція повинна повернути рядок "Sorry, there is no delivery to your country".
-*/
+
 
 function getShippingCost(country) {
     let price;
@@ -204,3 +204,4 @@ function getShippingCost(country) {
   console.log(getShippingCost('Jamaica')); // "Shipping to Jamaica will cost 120 credits"
   console.log(getShippingCost('Sweden')); // "Sorry, there is no delivery to your country"
   -----------------------
+*/

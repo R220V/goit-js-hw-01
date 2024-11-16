@@ -159,7 +159,6 @@ switch (number) {
 ? Функція має повернути true або false.
 */
 
-
 // Повна версія функції isStrIncludesForbiddenWords
 
 // function isStrIncludesForbiddenWords(string, blacklistedWord1, blacklistedWord2) {
@@ -177,9 +176,8 @@ switch (number) {
 // console.log(isStrIncludesForbiddenWords(string1, 'spam', 'sale'));
 // console.log(isStrIncludesForbiddenWords(string2, 'spam', 'sale'));
 // console.log(isStrIncludesForbiddenWords(string3, 'spam', 'sale'));
----------
+// ---------
 // Скорочена версія функції isStrIncludesForbiddenWords
-
 
 // function isStrIncludesForbiddenWords(string, blacklistedWord1, blacklistedWord2) {
 //   return string.toLowerCase().includes(blacklistedWord1) || string.toLowerCase().includes(blacklistedWord2);
